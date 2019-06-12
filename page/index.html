@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    
+</body>
+<script>
+   let arr =[0,2,465,4542,53,4,5455,123];
+       Array.prototype.foreach =(func,arr)=>{
+            if(typeof arr =="object"){
+                for(var i=0;i<arr.length;i++){
+                    func(arr[i])
+                }
+            }
+        }
+        arr.foreach((item)=>{
+            console.log(item);
+        },arr);
+
+</script>
+
+</html>
